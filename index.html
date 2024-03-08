@@ -3,81 +3,179 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Styling Navigation Bar</title>
-
-	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+	<title></title> 
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 
 	<style>
-		body {
-			background-image: url(https://st3.depositphotos.com/1064045/15061/i/450/depositphotos_150614902-stock-photo-unusual-cinema-concept-3d-illustration.jpg);
-			background-repeat: no-repeat;
-			background-position: top;
+		body{
+			background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-ChldUuAWOrHauU17BAnabyMHXF9KHieIPjKWaAZtpv1eBAEBelVAZDZiN5rRsKVb4jk&usqp=CAU");
+	  		background-position: center; 
+	  		background-color: black;
+	  		background-repeat: no-repeat;
 			background-size: cover;
-			font-family: Courier
+			background-attachment: scroll;
+		}
 		
 
-		img {
-			width: 100px;
 		}
 
-		.container {
-			width: 500px;
-			padding: 15px;
-			border-radius: 10px;
-			border-style: solid;
-  			border-width: medium;
-  			border-color: grey;
-		}
+		.nav-link {
+  			color: #409ef0;
+  		}
 
- 
-  }
+		h1 {
+  			font-family: 'Gowun Dodum', sans-serif;
+  			font-size: 60px;
+  			color:  royalblue;
+			  text-shadow:
+			    0 0 7px #409ef0,
+			    0 0 10px #409ef0,
+			    0 0 21px #409ef0;
+  			}
 
-  .container {
-        background-image:url(https://t4.ftcdn.net/jpg/02/71/50/69/360_F_271506927_WWFfd92jDIIDx6DgMflakU14o5jRPgBm.jpg); 
-         padding: 15px;
-  }
-
-  h2{
-  	color: aliceblue;
-  }
-
-  label{
-  	color: aliceblue;
-  }
-
-
-</style>
-  
+	</style>
 </head>
 <body>
 
-<div class="container mt-3">
+<nav class="navbar navbar-expand-xl bg-dark navbar-dark"><!-- Add navbar class -->
+	<a class="navbar-brand"> <!-- Add navbar-brand class -->
+		<img src="https://styles.redditmedia.com/t5_2qjhkq/styles/communityIcon_m8n0773vd0451.png" class="rounded-pill" id="brand" width="100">
+	</a>
+   <div class="container-fluid">
+		<ul class="navbar-nav">
+		    <li class="nav-item"> 
+		      <a class="nav-link" href="#">Home</a>
+		    </li>
+		    <li class="nav-item"> 
+		    	<a class="nav-link" href="#">Movies</a> 
+		    </li>
+		    <li class="nav-item dropdown"> <!-- Add nav-item class -->
+		     <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Genre</a> 
+             <ul class="dropdown-menu">
+		    	<li><a class="dropdown-item" href="#">Horror</a></li>
+			    <li><a class="dropdown-item" href="#">Action</a></li>
+			    <li><a class="dropdown-item" href="#">Comdey</a></li>
+			  </ul>
+		    </li>
+		   <li class="nav-item"> <!-- Add nav-item class --> 
+		    	<a class="nav-link" href="#">Contact Us</a> <!-- Add nav-link class -->
+		    </li>
+		</ul>
+	</div>
+</nav>
 
-  <h2>Registration</h2>
+<div class="container mt-4">
+			<center><h1>MOVIE REVIEWS</h1></center>
+			<table class="table table-dark table-striped">
+				<thead>
+					<tr>
+						<th class="col-sm-1 text-dark">space</th>
+						<th class="col-sm-1 text-white"></th>
+						<th class="col-sm-3 text-dark">space</th>
+						<th class="col-sm-1 text-dark">space</th>
+					</tr>
 
-    <form>
-        <div class="email mb-3" > <!--div for email-->
-            <label for="inputEmail">Email</label>
-            <input type="email" class="form-control" id="inputEmail" placeholder="Email">
-        </div>
+					<tr>
+						<th></th>
+						<th><img src="https://m.media-amazon.com/images/M/MV5BNmNjN2FiZWItYzJmZC00ZmM0LWFkYTctYmU0YzdiZWE2MzM0XkEyXkFqcGdeQXVyNjgwNTk4Mg@@._V1_.jpg" height="525" width="383"></th>
 
-        <div class="password mb-3"> <!--div for password-->
-            <label for="inputPassword">Password</label>
-            <input type="password" class="form-control" id="inputPassword" placeholder="Password">
-        </div>
+						<th> <a name="B"></a><a name="SD"></
+							<center><em>"Haruka Nozaki endures the bullying because of Mitsuru Aiba.
+							One day, a fire breaks out at her home. Her parents die and her younger sister is severely injured.
+							Haruka Nozaki has an emotional breakdown and she begins to take revenge on those who are 
+						    responsible."</em></center></h6>
 
-        <div class="remember mb-3">  <!--div for checkbox-->
-            <div>
-                <input type="checkbox" id="checkRemember">
-                <label for="checkRemember">Remember me</label>
-            </div>
-        </div>
-        <button type="submit" class="btn btn-primary">Sign in</button>
-    </form>
-</div>
-   	
+							<br />
+
+							<h2> CAST:</h2>
+
+							<p>Cast:Rena Ôtsuka, Anna Yamada, Rinka Ôtani, Ayaka Konno,
+							Seina Nakata, Kenshin Endô, Arisa Sakura
+
+							Director:Eisuke Naito
+
+							Duration:1h 55m</p>
+
+
+							<h2>RATINGS:</h2>
+								<p>⭐⭐⭐⭐⭐ <br /> <em>Oderah4life!! !!:good movie ,if your into middle schoolers committing arson on
+								poor family to mess around with classmate who their bullying
+								and which they get killed by the classmate.</strong></p>
+						</th>
+
+						<th></th>
+					</tr>
+
+					<tr>
+						<th></th>
+							<th><img src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTSzstYkGlUx26vUBYFPuKqiPqOvOCkH5R4wKCuJ_MWq0g_Rd87"  height="525" width="383"></th>
+						
+						<th> <a name="TS"></a><a name="COA"></a>
+						 <em><center>Uta is a beloved singer, renowned for concealing her own identity when performing.
+							Her voice is described as "otherworldly. Now, for the first time ever, Uta will reveal herself to the world at a live concert.</center></em>
+
+							<br />
+
+							<h2> CAST:</h2>
+
+							<p>Ado, Yuki Kaji, Kenjiro Tsuda
+							Yuki Yamada, Mayumi Tanaka, Naoto Takenaka
+							Kaori Nazuka
+
+							Director:Gorō Taniguchi
+
+							Duration:1h 55m</p>
+
+							<h2 class="tay">RATINGS:</h2> 
+
+								<p>⭐⭐⭐⭐ <br /> <em>Greg James-H:Loved it. Never seen a one piece movie but this was easily one of the top anime movies I've ever seen. It's a musical and colorful overload. Even if you're not a one piece fan you'll still probably enjoy it. Ado did a great job with the music</strong></p>
+
+						</th>			
+
+						<th></th>
+					</tr>
+
+					<!-- -------------------------------------------------------------------- -->
+
+					<tr>
+						<th></th>
+						<th><img src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQanhLRRiPquXyHr4H5kVJrEcTfic276FcSRt6n1zqIHFsHah41"  height="525" width="387"></th>
+						
+						<th> <a name="LW"></a><a name="W"></a>
+						<em><center>tells the story of Matilda Wormwood, a gifted girl forced to put up with a crude, distant father and mother. Worse, Agatha Trunchbull, the evil principal at Matilda's school, is a terrifyingly strict bully. However, when Matilda realizes she has the power of telekinesis, she begins to defend her friends from Trunchbull's wrath and fight back against her unkind parents.</center></em></h6>
+
+							<br />
+							
+							<h2> CAST:</h2>
+
+							<p>Danny DeVito, Mara Wilson, Rhea Perlman
+							Pam Ferris, Embeth Davidtz, Brian Levinson
+							Jimmy Karz, Kiami Davael, Jacqueline Streiger
+							Kir Spencer Hesser
+
+							Director:Danny Devito
+
+							Duration:1h 38m</p>
+
+							<h2 >RATINGS:</h2> 
+							
+								<p>⭐⭐⭐⭐<br /> <em>El Nathan Daylusan:I would say this is TIMELESS.It's also good and tells you that reading books can make you smart.Thanks netflix! It is also nice and a happy ending at the end! At first she has parents that think reading is dumb and watching TV is better.But when Matilda keeps reading she destroys the TV set with something ( I didn't want to say powers) also,she has a mean principal that is agrees to the deal the dad said,but Her teacher is really nice and becomes the principal at the end.</em>
+						</th>
+
+						<th></th>
+					</tr>
+
+					
+				</thead>
+
+
+
+
+
+			</table>
+	</div>
 
 </body>
 </html>
